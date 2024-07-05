@@ -1,0 +1,32 @@
+@media screen and (max-width: 90rem) {
+  #profile {
+    height: 84vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 75rem) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  .intro-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .intro-image img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .intro-content {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,14 @@
+.video-player {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.video-player video {
+  max-width: 100%;
+  max-height: 100%;
+}

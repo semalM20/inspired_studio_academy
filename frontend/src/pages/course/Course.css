@@ -1,0 +1,24 @@
+.info-grid-course {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.info-item-course {
+  text-align: center;
+  background-color: #222;
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 10px;
+  height: 40rem;
+}
+
+.info-item-off-course {
+  text-align: center;
+  background-color: #222;
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 10px;
+  height: 30rem;
+}

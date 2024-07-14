@@ -11,21 +11,10 @@ const userModel = require("./models/userModel");
 
 const app = express();
 
-const allowedOrigins = [
-  'https://inspiredstudio-academy.com',
-  'https://www.inspiredstudio-academy.com'
-];
-
 app.use(
   cors({
     // origin: process.env.fRONTEND_URL,
-    origin: function (origin, callback) {
-      if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
-        callback(null, true);
-      } else {
-        callback(new Error('Not allowed by CORS'));
-      }
-    },
+    origin: [process.env.FRONTEND_URL || 'https://inspiredstudio-academy.com', 'https://www.inspiredstudio-academy.com'],
     credentials: true,
   })
 );

@@ -10,9 +10,22 @@ const subscribeModel = require("./models/subscriptionModel");
 const userModel = require("./models/userModel");
 
 const app = express();
+
+const allowedOrigins = [
+  'https://inspiredstudio-academy.com',
+  'https://www.inspiredstudio-academy.com'
+];
+
 app.use(
   cors({
-    origin: process.env.fRONTEND_URL,
+    // origin: process.env.fRONTEND_URL,
+    origin: function (origin, callback) {
+      if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
     credentials: true,
   })
 );

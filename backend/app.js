@@ -13,8 +13,7 @@ const app = express();
 
 app.use(
   cors({
-    // origin: process.env.fRONTEND_URL,
-    origin: 'https://www.inspiredstudio-academy.com',
+    origin: process.env.fRONTEND_URL,
     credentials: true,
   })
 );

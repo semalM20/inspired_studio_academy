@@ -18,8 +18,8 @@ const shopPayment = async (req, res) => {
         payment_method: "paypal",
       },
       redirect_urls: {
-        return_url: "http://localhost:5900/api/shop-success?amount=" + amount,
-        cancel_url: "http://localhost:5900/api/shop-failed?amount=" + amount,
+        return_url: "https://api.inspiredstudio-academy.com/api/shop-success?amount=" + amount,
+        cancel_url: "https://api.inspiredstudio-academy.com/api/shop-failed?amount=" + amount,
       },
       transactions: [
         {

@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
+const path = require("path");
 const connectDB = require("./config/db");
 require("dotenv").config();
 const router = require("./routes");
@@ -20,6 +21,9 @@ app.use(
 
 app.use(express.json());
 app.use(cookieParser());
+
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use("/api", router);
 

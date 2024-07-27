@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../style.css";
 import "./Home.css";
-import "../mediaqueries.css";
 import { useNavigate } from "react-router-dom";
 
 import SlideImage1 from "../../assets/img1.jpg";

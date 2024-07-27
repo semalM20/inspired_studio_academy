@@ -1,0 +1,114 @@
+/* General Styles */
+.top-bar {
+    background-color: #151515;
+    height: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-content {
+    padding: 10px;
+    margin-left: 15px;
+    color: #fff;
+}
+
+.right-content {
+    padding: 10px;
+    margin-right: 15px;
+    color: #fff;
+}
+
+.mobile-link::before {
+    content: "\f10b";
+    font-family: "Font Awesome 5 Free";
+    margin-right: 5px;
+    color: #fdfdfd;
+    margin-right: 5px;
+}
+
+.mobile-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.mobile-link:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    background-color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    position: relative;
+    align-items: center;
+}
+
+.navbar-left img {
+    width: 100px;
+    height: 60px;
+}
+
+.navbar-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-center .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: color 0.3s;
+}
+
+.navbar-center .nav-link:hover {
+    color: #977656;
+    text-decoration: underline;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-center {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #000;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        display: none;
+    }
+
+    .navbar-center.open {
+        display: flex;
+    }
+
+    .navbar-right {
+        display: flex;
+        /* flex-direction: column; */
+        /* gap: 10px; */
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}

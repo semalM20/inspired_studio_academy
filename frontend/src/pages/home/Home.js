@@ -13,7 +13,7 @@ import iBoxImage3 from "../../assets/img3tech.jpg";
 import iBoxImage4 from "../../assets/img4tech.jpg";
 import iBoxImage5 from "../../assets/img5tech.jpg";
 
-import mBoxImage2 from "../../assets/IMG-20240228-WA0007.jpg";
+import mBoxImage2 from "../../assets/homePageAdditionalInfoImg.jpg";
 
 import introImage1 from "../../assets/IMG-20240214-WA0014.jpg";
 import introImage2 from "../../assets/intopic.jpg";

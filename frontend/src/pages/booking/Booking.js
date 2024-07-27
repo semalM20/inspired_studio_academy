@@ -123,8 +123,9 @@ const Booking = () => {
         <h2>Book a Free Haircut Slot</h2>
         <h3 style={{ color: "white", paddingBottom: "20px" }}>
           {" "}
-          *ONLY AVAILABLE ON MONDAY AND WEDNESDAY BETWEEN 10:00 - 16:00{" "}
+          <sup>*</sup>ONLY AVAILABLE ON MONDAY AND WEDNESDAY BETWEEN 10:00 - 16:00{" "}
         </h3>
+        <h3 className="uppercase"><sup>*</sup>Will be available from 18th August</h3>
         <form id="book-slot-form" onSubmit={handleSubmit}>
           <div className="form-group-inline">
             <div className="form-group">

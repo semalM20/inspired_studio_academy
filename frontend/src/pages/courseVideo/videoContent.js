@@ -485,18 +485,21 @@ const VideoContent = () => {
                 <div className="flex justify-around w-full">
                   <Link
                     to="/pdfCourse"
+                    target="blank"
                     className="px-3 py-1 m-2 rounded text-white bg-red-600 hover:bg-red-700"
                   >
                     BEGINNER BARBER BOOK
                   </Link>
                   <Link
                     to="/pdfCourse2"
+                    target="blank"
                     className="px-3 py-1 m-2 rounded text-white bg-red-600 hover:bg-red-700"
                   >
                     CONTENTS MODULESS ISA
                   </Link>
                   <Link
                     to="/pdfCourse3"
+                    target="blank"
                     className="px-3 py-1 m-2 rounded text-white bg-red-600 hover:bg-red-700"
                   >
                     FUNDAMENTALS BOOK ISA

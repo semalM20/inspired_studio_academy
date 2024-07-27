@@ -21,3 +21,9 @@
 .sidebar button:hover {
   background-color: #e4e4e4;
 }
+
+@media (max-width: 550px) {
+  .sidebar {
+    width: auto;
+  }
+}

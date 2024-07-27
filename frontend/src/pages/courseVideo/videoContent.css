@@ -2,3 +2,10 @@
   display: flex;
   height: 100vh;
 }
+
+@media (max-width: 550px) {
+  .app {
+    flex-direction: column;
+    height: auto;
+  }
+}

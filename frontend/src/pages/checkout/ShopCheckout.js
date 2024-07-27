@@ -32,7 +32,7 @@ const ShopCheckout = () => {
       return {
         ...preve,
         [name]: value,
-      };
+        };
     });
   };
 
@@ -74,7 +74,6 @@ const ShopCheckout = () => {
         <>
           {cartCount > 0 ? (
             <div className="mx-auto container p-4">
-              {/* <div className="bg-white p-5 w-full max-w-sm mx-auto"> */}
               <p className="text-right text-red-600 text-xl mr-5">
                 <sup>**</sup> Products are non-refundable
               </p>
@@ -86,13 +85,13 @@ const ShopCheckout = () => {
               <div className="pt-6 flex flex-col lg:flex-row gap-10 lg:justify-around p-4">
                 {/* checkout user details */}
                 <form
-                  className="flex flex-col gap-2 w-1/2"
+                  className="flex flex-col gap-2 lg:w-1/2 w-full"
                   onSubmit={handleSubmit}
                 >
                   <h3 className="text-xl text-red-600 font-semibold text-center">
                     Please Enter Your Details
                   </h3>
-                  <div className="grid mx-16">
+                  <div className="grid mx-4 lg:mx-16">
                     <label>Name: </label>
                     <div className="bg-slate-100 p-2">
                       <input
@@ -107,7 +106,7 @@ const ShopCheckout = () => {
                     </div>
                   </div>
 
-                  <div className="grid mx-16">
+                  <div className="grid mx-4 lg:mx-16">
                     <label>Email: </label>
                     <div className="bg-slate-100 p-2">
                       <input
@@ -121,7 +120,7 @@ const ShopCheckout = () => {
                       />
                     </div>
                   </div>
-                  <div className="grid mx-16">
+                  <div className="grid mx-4 lg:mx-16">
                     <label>Phone Number: </label>
                     <div className="bg-slate-100 p-2">
                       <input
@@ -135,8 +134,8 @@ const ShopCheckout = () => {
                       />
                     </div>
                   </div>
-                  <div className="flex justify-around">
-                    <div className="grid">
+                  <div className="flex flex-col lg:flex-row justify-between mx-4 lg:mx-16">
+                    <div className="grid w-full lg:w-1/2 pr-0 lg:pr-2">
                       <label>City: </label>
                       <div className="bg-slate-100 p-2">
                         <input
@@ -150,7 +149,7 @@ const ShopCheckout = () => {
                         />
                       </div>
                     </div>
-                    <div className="grid">
+                    <div className="grid w-full lg:w-1/2 pl-0 lg:pl-2">
                       <label>Postal Code: </label>
                       <div className="bg-slate-100 p-2">
                         <input
@@ -165,7 +164,7 @@ const ShopCheckout = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="grid mx-16">
+                  <div className="grid mx-4 lg:mx-16">
                     <label>Address: </label>
                     <div className="bg-slate-100 p-2">
                       <input
@@ -184,7 +183,6 @@ const ShopCheckout = () => {
                   </button>
                 </form>
               </div>
-              {/* </div> */}
             </div>
           ) : (
             <div className="h-96 flex flex-col justify-center items-center">

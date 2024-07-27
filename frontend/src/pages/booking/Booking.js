@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "../style.css";
-import "../mediaqueries.css";
 import "./Booking.css";
 import { Link, useNavigate } from "react-router-dom";
 import courseBoxImage1 from "../../assets/IMG-20240214-WA0009.jpg";
@@ -191,7 +189,7 @@ const Booking = () => {
             <img
               src={courseBoxImage1}
               alt="Offline Course 1"
-              className="course-img ml-[55px]"
+              className="course-img"
             />
 
             <button
@@ -217,7 +215,7 @@ const Booking = () => {
             <img
               src={courseBoxImage2}
               alt="Offline Course 2"
-              className="course-img ml-[55px]"
+              className="course-img"
             />
 
             <button

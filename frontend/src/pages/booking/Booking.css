@@ -682,4 +682,9 @@
     align-items: center;
     height: auto;
   }
+
+  .info-grid .info-item {
+    width: auto;
+  }
+
 }

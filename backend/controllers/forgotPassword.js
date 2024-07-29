@@ -20,7 +20,7 @@ const sendResetPasswordMail = async (name, email, token) => {
       to: email,
       subject: "For Reset Password",
       html: `<p>Hi ${name},</p>
-      <p>Please click on the link to <a href="${process.env.fRONTEND_URL}/resetPassword/${token}">reset your password</a></p>`,
+      <p>Please click on the link to <a href="${process.env.fRONTEND_URL}/resetPassword?token=${token}">reset your password</a></p>`,
     };
     transporter.sendMail(mailOptions, function (error, info) {
       if (error) {

@@ -3,9 +3,20 @@ import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import SummaryApi from "../common";
 import { toast } from "react-toastify";
+import { useLocation } from 'react-router-dom';
+
+const useQuery = () => {
+  return new URLSearchParams(useLocation().search);
+};
 
 const ResetPassword = () => {
-  const { token } = useParams();
+  // const { token } = useParams();
+
+  const query = useQuery();
+  
+  // Example: Get a query parameter named 'name'
+  const token = query.get('token');
+
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 

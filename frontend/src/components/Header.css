@@ -4,7 +4,8 @@
     height: 35px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -49,8 +50,8 @@
 }
 
 .navbar-left img {
-    width: 100px;
-    height: 60px;
+    width: 140px;
+    height: 80px;
 }
 
 .navbar-center {

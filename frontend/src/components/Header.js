@@ -155,6 +155,7 @@
 
 
 
+
 import React, { useState } from "react";
 import Logo from "../assets/Logo .jpg";
 import { FaShoppingCart, FaBars, FaTimes } from "react-icons/fa";
@@ -206,11 +207,11 @@ const Header = () => {
     <>
       <header>
         <div className="top-bar">
-          <div className="left-content">
+          {/* <div className="left-content">
             <Link to="tel:+44 7448 452820" className="mobile-link">
               Mobile
             </Link>
-          </div>
+          </div> */}
           <div className="right-content">
             <p>WE ARE OPEN 7 DAYS A WEEK</p>
           </div>

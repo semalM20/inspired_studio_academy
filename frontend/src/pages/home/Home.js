@@ -12,6 +12,7 @@ import iBoxImage2 from "../../assets/img2tech.jpg";
 import iBoxImage3 from "../../assets/img3tech.jpg";
 import iBoxImage4 from "../../assets/img4tech.jpg";
 import iBoxImage5 from "../../assets/img5tech.jpg";
+import iBoxImage6 from "../../assets/iBoxImage6.jpg";
 
 import mBoxImage2 from "../../assets/homePageAdditionalInfoImg.jpg";
 
@@ -99,7 +100,7 @@ const Home = () => {
 
           <div className="button-container">
             <button className="rectangle-button" onClick={handleGetCourse}>
-              GET COURSE
+              Action Button
             </button>
           </div>
           <div className="rectangle-container">
@@ -117,6 +118,7 @@ const Home = () => {
                   src={mainPgIntroVideo}
                   // src={`https://res.cloudinary.com/${process.env.CLOUDINARY_PASS}/video/upload/v1718170469/barber-videos/mvvo6j8rk2j89wbxmit0.mp4`}
                   controls
+                  // poster={SlideImage1}
                   style={{
                     height: "300px",
                     width: "300px",
@@ -200,21 +202,25 @@ const Home = () => {
               <img src={iBoxImage5} className="center-image" alt="Img5" />
               <p>Technique 5</p>
             </div>
+            <div className="image-box">
+              <img src={iBoxImage6} className="center-image" alt="Img6" />
+              <p>Technique 6</p>
+            </div>
           </div>
         </div>
         <h2 style={{ marginTop: "20px" }}>
           Here's some additional information about our course:
         </h2>
         <div className="medium-boxes">
-          <div className="medium-box">
-            <p>
+          <div className="medium-box" style={{ fontSize: "18px" }}>
+            <h4>
               About the offline classes, We offer small groups with only 4
               students at a time, allowing us to give each student more
               attention and ensure that everyone fully understands the material.
               In the past year, we have successfully graduated over 25 students,
               who are now working as barbers in various shops. Our strategy and
               education help them achieve their goals and dreams.
-            </p>
+            </h4>
           </div>
           <div className="medium-box">
             <img src={mBoxImage2} alt="Topic 1 Img" />

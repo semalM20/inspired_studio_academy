@@ -533,7 +533,7 @@ body {
 .slide {
   flex: 0 0 100%;
   overflow: hidden;
-  border: 5px solid white;
+  border: 2px solid white;
   height: 400px;
   box-sizing: border-box;
 }
@@ -652,7 +652,7 @@ body {
 .image-box {
   margin: 10px;
   text-align: center;
-  border: 2px solid #fff;
+  /* border: 2px solid #fff; */
   padding: 10px;
   width: 200px;
 }
@@ -665,6 +665,7 @@ body {
 .image-box p {
   font-size: 13px;
   margin-top: 10px;
+  padding: 0;
 }
 
 .about-section h3 {
@@ -702,9 +703,9 @@ body {
 
 .medium-box {
   text-align: center;
-  border: 2px solid #fff;
+  /* border: 2px solid #fff; */
   padding: 20px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   width: 30%;
   margin-top: 20px;
 }
@@ -715,24 +716,24 @@ body {
   padding: 40px 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .intro-image {
   flex: 0 0 auto;
-  margin-right: 100px;
+  /* margin-right: 100px; */
 }
 
 .intro-image img {
   width: 200px;
   transition: transform 0.3s ease, filter 0.3s ease;
-  border: 5px solid white;
+  /* border: 5px solid white; */
   filter: grayscale(100%);
 }
 
 .intro-image img:hover {
   transform: scale(1.1);
-  border-color: #7e5e3d;
+  /* border-color: #7e5e3d; */
   filter: grayscale(0%);
 }
 

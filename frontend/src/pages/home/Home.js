@@ -14,7 +14,7 @@ import iBoxImage4 from "../../assets/img4tech.jpg";
 import iBoxImage5 from "../../assets/img5tech.jpg";
 import iBoxImage6 from "../../assets/iBoxImage6.jpg";
 
-import mBoxImage2 from "../../assets/homePageAdditionalInfoImg.jpg";
+import mBoxImage2 from "../../assets/homePageAddInfoImg.jpg";
 
 import introImage1 from "../../assets/IMG-20240214-WA0014.jpg";
 import introImage2 from "../../assets/intopic.jpg";
@@ -107,9 +107,10 @@ const Home = () => {
             <h2>WHY INSPIRED STUDIO ACADEMY ?</h2>
             <p>
               Our Course it’s held from Our Instructor Adrian which is very
-              professional and have experience He build his own strategy to make
-              you a professional barber in a sort period time ! All the
-              information to grow you and understanding everything to achieve it
+              professional and have experience he build his own strategy to make
+              you a professional barber in a short period time! All the Education and 
+              practice to help you grow and to become a Barber.
+              <br/>Part-Time Job Available after Course.
             </p>
             <div className="video-boxes">
               <div className="video-box">

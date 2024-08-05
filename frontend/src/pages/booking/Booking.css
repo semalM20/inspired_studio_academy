@@ -480,7 +480,8 @@
 }
 
 .offline-course-section {
-  background-color: #151515;
+  /* background-color: #151515; */
+  background-color: #000000;
   padding: 30px;
   text-align: center;
   color: white;
@@ -547,10 +548,10 @@
 .info-item {
   height: auto;
   text-align: center;
-  background-color: #222;
-  border: 2px solid white;
+  /* background-color: #222; */
+  /* border: 2px solid white; */
   padding: 20px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .info-item img {

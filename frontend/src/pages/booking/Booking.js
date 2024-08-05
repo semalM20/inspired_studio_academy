@@ -125,7 +125,7 @@ const Booking = () => {
           {" "}
           <sup>*</sup>ONLY AVAILABLE ON MONDAY AND WEDNESDAY BETWEEN 10:00 - 16:00{" "}
         </h3>
-        <h3 className="uppercase"><sup>*</sup>Will be available from 18th August</h3>
+        <h3 className="uppercase"><sup>*</sup>Will be coming soon...</h3>
         <form id="book-slot-form" onSubmit={handleSubmit}>
           <div className="form-group-inline">
             <div className="form-group">
@@ -208,7 +208,7 @@ const Booking = () => {
             </p>
           </div>
           <div className="course-box" style={{ paddingTop: "30px" }}>
-            <h2 className="mb-14">GET ENROLLED IN OFFLINE COURSE</h2>
+            {/* <h2 className="mb-14">GET ENROLLED IN OFFLINE COURSE</h2> */}
             <h4>BOOK YOUR SLOTS ACCORDINGLY </h4>
             <p>*There are limites seats in each slot </p>
           </div>
@@ -237,7 +237,7 @@ const Booking = () => {
       </div>
 
       <div className="offline-info" id="offline-info">
-        <h2 className="offline-info-heading">GET ENROLLED IN ONLINE COURSE</h2>
+      <h2 className="booking-offline-info-heading uppercase">Register For ONLINE Education Course</h2>
 
         <div className="info-grid h-[420px] flex flex-col justify-around items-center">
           <div className="info-item flex flex-col justify-around w-1/2 h-72">

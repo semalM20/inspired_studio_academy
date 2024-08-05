@@ -742,7 +742,7 @@ const Course = () => {
           style={{ textTransform: "uppercase" }}
         >
           {" "}
-          <u>More Info About Online Courses </u>
+          {/* <u>More Info About Online Courses </u> */}
         </h2>
         <div className="info-grid-course">
           {/* <div className="info-item-course">
@@ -770,10 +770,10 @@ const Course = () => {
               will teach you every detail through the theoretical and practical
               form.
             </p>
-            <p className="mt-3">
+            {/* <p className="mt-3">
               The online course features over 50 videos and includes a special
               book authored by Adrian himself, valued at £100.{" "}
-            </p>
+            </p> */}
           </div>
           <div className="info-item-course">
             <img

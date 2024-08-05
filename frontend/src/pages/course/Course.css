@@ -209,7 +209,8 @@
 
 .course-section {
   padding: 40px;
-  background-color: #151515;
+  /* background-color: #151515;  */
+  background-color: #000000;
 }
 
 .course-container {
@@ -391,7 +392,7 @@
 
 .info-item-course {
   text-align: center;
-  background-color: #222;
+  /* background-color: #222; */
   /* border: 2px solid white; */
   padding: 20px;
   /* border-radius: 10px; */
@@ -412,7 +413,7 @@
 
 .info-item-off-course {
   text-align: center;
-  background-color: #222;
+  /* background-color: #222; */
   /* border: 2px solid white; */
   padding: 20px;
   /* border-radius: 10px; */

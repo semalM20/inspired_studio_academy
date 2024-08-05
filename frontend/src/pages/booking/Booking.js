@@ -242,9 +242,9 @@ const Booking = () => {
         <div className="info-grid h-[420px] flex flex-col justify-around items-center">
           <div className="info-item flex flex-col justify-around w-1/2 h-72">
             {/* <p style={{ color: "#977656", fontSize: "24px" }}> */}
-            <p style={{ color: "white", fontSize: "24px" }}>
+            {/* <p style={{ color: "white", fontSize: "24px" }}>
               <strong> Sign up now for our Barber Courses. </strong>
-            </p>
+            </p> */}
 
             <p>
               In these videos, you'll find detailed step-by-step instructions,

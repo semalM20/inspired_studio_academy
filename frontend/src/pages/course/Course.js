@@ -591,63 +591,11 @@ const Course = () => {
 
   return (
     <>
-      <section className="course-section">
-        <div className="course-container">
-          <div className="course-info">
-            <h1>Online Beginner Barber Step-By-Step Course was for £1250</h1>
-            <h1>And now for first 100 people 60% OFF/- </h1>
-            {/* <h2 style={{ color: "#977656" }}> */}
-            <h2 style={{ color: "white" }}>
-              {" "}
-              <u>Now only for £500 </u>
-            </h2>
-            <h3>| Barbers' Most Trusted and Most Affordable</h3>
-            <button className="enroll-button" onClick={handleGetEnrolled}>
-              GET ENROLLED
-            </button>
-          </div>
-
-          <div className="course-image">
-            <div className="flip-card">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <img
-                    src={courseImage}
-                    alt="Avatar"
-                    style={{ width: "300px", height: "300px" }}
-                  />
-                </div>
-                <div className="flip-card-back">
-                  {/* <h4 style={{ color: "#977656" }}> */}
-                  <h4 style={{ color: "white" }}>
-                    {" "}
-                    This course, created by our expert Adrian, includes:{" "}
-                  </h4>{" "}
-                  {/* <p> */}{" "}
-                  <h5 style={{ fontSize: "14px" }}>~ Clipper Grades </h5>
-                  <h5 style={{ fontSize: "14px" }}>~ One Length Haircut </h5>
-                  <h5 style={{ fontSize: "14px" }}>~ Scissor Cut-Underhand </h5>
-                  <h5 style={{ fontSize: "14px" }}>
-                    ~ Clipper Cut 1 Fade-Tapper On The Nape{" "}
-                  </h5>
-                  <h5 style={{ fontSize: "14px" }}>~ Skin Fade </h5>
-                  <h5 style={{ fontSize: "14px" }}>~ Beard Trimm-Shape Up </h5>
-                  <h5 style={{ fontSize: "14px" }}>~ Buzz Cut Skin Fade </h5>
-                  <h5 style={{ fontSize: "14px" }}>~ Professionalism </h5>
-                  <h5 style={{ fontSize: "14px" }}>~ Consultation</h5>
-                  <h5 style={{ fontSize: "14px" }}>~ Hair Science</h5>
-                  <h5 style={{ fontSize: "14px" }}>~ Clipper Maintenance</h5>
-                  {/* </p> */}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div className="course-selection-wrapper">
-        <h2 className="course-selection-heading">
+    <div className="course-selection-wrapper">
+        <h2 className="course-selection-heading uppercase">
           {" "}
-          <u>CHOOSE YOUR OFFLINE COURSE </u>
+          {/* <u>CHOOSE YOUR OFFLINE COURSE </u> */}
+          <u>Register Now For Our In Person Barber Courses </u>
         </h2>
       </div>
 
@@ -734,6 +682,60 @@ const Course = () => {
           </div>
         </div>
       </div>
+      <section className="course-section">
+        <div className="course-container">
+          <div className="course-info">
+            {/* <h1>Online Beginner Barber Step-By-Step Course was for £1250</h1> */}
+            <h1>Online Education Courses For Beginner's (Learn From Your Own Pace) <br/>was for £1250</h1>
+            <h1>60% OFF/- for first 100 people only. </h1>
+            {/* <h2 style={{ color: "#977656" }}> */}
+            <h2 style={{ color: "white" }}>
+              {" "}
+              <u>Now only for £500 </u>
+            </h2>
+            <button className="enroll-button" onClick={handleGetEnrolled}>
+              GET ENROLLED
+            </button>
+          </div>
+
+          <div className="course-image">
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <img
+                    src={courseImage}
+                    alt="Avatar"
+                    style={{ width: "300px", height: "300px" }}
+                  />
+                </div>
+                <div className="flip-card-back">
+                  {/* <h4 style={{ color: "#977656" }}> */}
+                  <h4 style={{ color: "white" }}>
+                    {" "}
+                    This course, created by our expert Adrian, includes:{" "}
+                  </h4>{" "}
+                  {/* <p> */}{" "}
+                  <h5 style={{ fontSize: "14px" }}>~ Clipper Grades </h5>
+                  <h5 style={{ fontSize: "14px" }}>~ One Length Haircut </h5>
+                  <h5 style={{ fontSize: "14px" }}>~ Scissor Cut-Underhand </h5>
+                  <h5 style={{ fontSize: "14px" }}>
+                    ~ Clipper Cut 1 Fade-Tapper On The Nape{" "}
+                  </h5>
+                  <h5 style={{ fontSize: "14px" }}>~ Skin Fade </h5>
+                  <h5 style={{ fontSize: "14px" }}>~ Beard Trimm-Shape Up </h5>
+                  <h5 style={{ fontSize: "14px" }}>~ Buzz Cut Skin Fade </h5>
+                  <h5 style={{ fontSize: "14px" }}>~ Professionalism </h5>
+                  <h5 style={{ fontSize: "14px" }}>~ Consultation</h5>
+                  <h5 style={{ fontSize: "14px" }}>~ Hair Science</h5>
+                  <h5 style={{ fontSize: "14px" }}>~ Clipper Maintenance</h5>
+                  {/* </p> */}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <div className="online-info" id="online-info">
         <h2
           className="online-info-heading"
@@ -743,13 +745,13 @@ const Course = () => {
           <u>More Info About Online Courses </u>
         </h2>
         <div className="info-grid-course">
-          <div className="info-item-course">
+          {/* <div className="info-item-course">
             <img
               src={infoItemImage1}
               alt="Description of img1"
               className="h-full w-full"
             />
-          </div>
+          </div> */}
           <div className="info-item-course">
             {/* <p style={{ color: "#977656", marginBottom: "5%" }}> */}
             <p style={{ color: "white", marginBottom: "5%" }}>
@@ -770,8 +772,7 @@ const Course = () => {
             </p>
             <p className="mt-3">
               The online course features over 50 videos and includes a special
-              book authored by Adrian himself, valued at £100. However, you'll
-              receive the book complimentary with your course purchase.{" "}
+              book authored by Adrian himself, valued at £100.{" "}
             </p>
           </div>
           <div className="info-item-course">
@@ -789,7 +790,7 @@ const Course = () => {
           style={{ textTransform: "uppercase" }}
         >
           {" "}
-          <u>More Info About Offline Courses </u>
+          <u>More Info About In-Person Courses </u>
         </h3>
         <div className="info-grid-course">
           <div className="info-item-off-course">
@@ -801,10 +802,10 @@ const Course = () => {
             <p>
               {" "}
               What will you learn with us? <br></br>
-              <strong>*The Head</strong> <br></br>
+              <strong>*Scissor Cut Underhand</strong> <br></br>
               <strong>*One Length.</strong> <br></br>
-              <strong>*Placement of line (Fade)</strong> <br></br>
-              <strong>*Tapering</strong> <br></br>
+              <strong>*Marketing</strong> <br></br>
+              <strong>*Consultation</strong> <br></br>
               <strong>* Outlines</strong> <br></br>
               <strong>*Profile Line</strong> <br></br>
               <strong>*Connecting - Scissor or Clipper work</strong> <br></br>
@@ -812,7 +813,6 @@ const Course = () => {
               <strong>*Scissor over comb</strong> <br></br>
               <strong>*Remove the corner from the fringe </strong> <br></br>
               <strong>*Texturizing the top </strong> <br></br>
-              <strong>*Razor fade </strong> <br></br>
             </p>
             {/* <p style={{ color: "#977656" }}> */}
             <p style={{ color: "white" }}>

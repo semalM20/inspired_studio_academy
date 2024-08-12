@@ -35,6 +35,8 @@ const AllSlots = () => {
             <th>Name</th>
             <th>Booking Date</th>
             <th>Time</th>
+            <th>Email</th>
+            <th>Phone Number</th>
             <th>Created Date</th>
           </tr>
         </thead>
@@ -46,6 +48,8 @@ const AllSlots = () => {
                 <td key={index + 3}>{el?.name}</td>
                 <td key={index + 4}>{moment(el?.date).format("LL")}</td>
                 <td key={index + 5}>{el?.time}</td>
+                <td key={index + 5}>{el?.email}</td>
+                <td key={index + 5}>{el?.number}</td>
                 <td key={index + 6}>{moment(el?.createdAt).format("LL")}</td>
               </tr>
             );

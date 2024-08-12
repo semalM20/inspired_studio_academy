@@ -17,6 +17,8 @@ async function bookSlot(req, res) {
       name: req.body.name,
       date: req.body.date,
       time: req.body.time,
+      number: req.body.number,
+      email: req.body.email
     });
 
     await newSlot

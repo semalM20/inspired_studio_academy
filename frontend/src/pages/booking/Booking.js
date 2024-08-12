@@ -14,17 +14,21 @@ const Booking = () => {
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
+  const [number, setNumber] = useState("");
+  const [email, setEmail] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const newSlot = { name, date, time };
+    const newSlot = { name, date, time, email, number };
     try {
       const res = await axios.post(SummaryApi.bookSlot.url, newSlot);
       if (res.data.status) toast.success(res.data.message);
       setName("");
       setDate("");
       setTime("");
+      setEmail("");
+      setNumber("");
     } catch (error) {
       toast.error("slot is already booked");
     }
@@ -173,6 +177,32 @@ const Booking = () => {
                 }}
               />
             </div>
+            <div className="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="number"
+                id="number"
+                name="number"
+                placeholder="Contact Number"
+                required
+                value={number}
+                onChange={(e) => {
+                  setNumber(e.target.value);
+                }}
+              />
+            </div>
           </div>
           <button
             type="submit"
@@ -237,7 +267,7 @@ const Booking = () => {
       </div>
 
       <div className="offline-info" id="offline-info">
-      <h2 className="booking-offline-info-heading uppercase">Register For ONLINE Education Course</h2>
+        <h2 className="booking-offline-info-heading uppercase">Register For ONLINE Education Course</h2>
 
         <div className="info-grid h-[420px] flex flex-col justify-around items-center">
           <div className="info-item flex flex-col justify-around w-1/2 h-72">

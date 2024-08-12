@@ -126,6 +126,15 @@ const SummaryApi = {
     url: `${backendDomain}/api/shop-user-buyers`,
     method: "get",
   },
+  //finance Plan Query
+  postFinancePlanQueries: {
+    url: `${backendDomain}/api/send-query`,
+    method: "post",
+  },
+  getFinancePlanQueries: {
+    url: `${backendDomain}/api/get-all-queries`,
+    method: "get",
+  }
 };
 
 export default SummaryApi;

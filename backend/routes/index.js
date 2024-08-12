@@ -33,12 +33,15 @@ const addToCartViewProductController = require("../controllers/cart/addToCartVie
 const updateAddToCartProductController = require("../controllers/cart/updateAddToCartProductController");
 const deleteAddToCartProductController = require("../controllers/cart/deleteAddToCartProductController");
 const getCategoryWiseProduct = require("../controllers/products/getCategoryWiseProduct");
-//shop chechout
+//shop checkout
 const shopUserDetailsController = require("../controllers/shopCheckout/shopUserDetailsController");
 const shopPayment = require("../controllers/shopCheckout/shopPaypal");
 const shopPayFailed = require("../controllers/shopCheckout/shopPaypalError");
 const allShopUserDetails = require("../controllers/shopCheckout/allShopUserDetails");
 const shopPaySuccess = require("../controllers/shopCheckout/shopPaypalSuccess");
+//finance plan query
+const financePlanQuery = require("../controllers/financePlan/financePlanQuery");
+const allFinancePlanQuery = require("../controllers/financePlan/allFinancePlanQuery");
 
 router.post("/signup", userSignUpController);
 router.post("/login", userSignInController);
@@ -96,5 +99,9 @@ router.get("/shop-user-buyers", allShopUserDetails);
 router.post("/shop-payment", shopPayment);
 router.get("/shop-success", shopPaySuccess);
 router.get("/shop-failed", shopPayFailed);
+
+//finance plan
+router.post('/send-query', financePlanQuery)
+router.get('/get-all-queries', allFinancePlanQuery)
 
 module.exports = router;

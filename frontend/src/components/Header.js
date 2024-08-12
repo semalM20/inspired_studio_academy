@@ -233,6 +233,9 @@ const Header = () => {
             <Link to="/booking" className="nav-link">
               BOOK SESSION
             </Link>
+            <Link to="/financePlan" className="nav-link">
+              FINANCE PLAN AVAILABLE
+            </Link>
             <Link to="/shop" className="nav-link">
               SHOP
             </Link>

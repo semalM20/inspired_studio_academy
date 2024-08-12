@@ -39,6 +39,8 @@ import CheckoutSummary from "../pages/checkout/CheckoutSummary";
 import ShopPaymentFailed from "../pages/checkout/ShopPaymentFailed";
 import ShopPaymentSuccess from "../pages/checkout/ShopPaymentSuccess";
 import ShopProducts from "../pages/checkout/ShopProducts";
+import FinancePlan from "../pages/financePlan/FinancePlan";
+import ShowQueries from '../pages/financePlan/ShowQueries'
 
 const router = createBrowserRouter([
   {
@@ -179,6 +181,10 @@ const router = createBrowserRouter([
         element: <ShopPaymentSuccess />,
       },
       {
+        path: "financePlan",
+        element: <FinancePlan />,
+      },
+      {
         path: "admin-panel",
         element: <AdminPanel />,
         children: [
@@ -209,6 +215,10 @@ const router = createBrowserRouter([
           {
             path: "shop-products",
             element: <ShopProducts />,
+          },
+          {
+            path: "show-queries",
+            element: <ShowQueries />,
           },
         ],
       },

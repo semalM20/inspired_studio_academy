@@ -50,6 +50,8 @@ function ReviewList() {
             <div key={review._id} style={reviewStyle}>
               <h3>Name: {review.name}</h3>
               <p>Rating: {review.rating}</p>
+              <p>Email: {review.email}</p>
+              <p>Phone Number: {review.number}</p>
               <p>Comment: {review.comment}</p>
               <p>Created Date: {new Date(review.createdAt).toLocaleString()}</p>
             </div>

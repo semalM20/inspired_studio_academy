@@ -29,8 +29,6 @@ const FinancePlan = () => {
             body: JSON.stringify(formData)
         });
 
-        console.log(response, "---->response")
-
         if (response.ok) {
             toast.success('Query sent successfully');
             // Reset form fields

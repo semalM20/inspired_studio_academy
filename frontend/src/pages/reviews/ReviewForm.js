@@ -33,6 +33,8 @@ function ReviewForm() {
   const [name, setName] = useState("");
   const [rating, setRating] = useState("");
   const [comment, setComment] = useState("");
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -40,11 +42,15 @@ function ReviewForm() {
       name,
       rating,
       comment,
+      email,
+      number
     });
     toast.success("Review added successfully");
     setName("");
     setRating("");
     setComment("");
+    setEmail("");
+    setNumber("");
   };
 
   return (
@@ -76,6 +82,22 @@ function ReviewForm() {
               style={inputStyle}
               min="1"
               max="5"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              style={inputStyle}
+              required
+            />
+            <input
+              type="number"
+              placeholder="Contact Number"
+              value={number}
+              onChange={(e) => setNumber(e.target.value)}
+              style={inputStyle}
               required
             />
             <textarea

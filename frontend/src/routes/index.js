@@ -40,7 +40,9 @@ import ShopPaymentFailed from "../pages/checkout/ShopPaymentFailed";
 import ShopPaymentSuccess from "../pages/checkout/ShopPaymentSuccess";
 import ShopProducts from "../pages/checkout/ShopProducts";
 import FinancePlan from "../pages/financePlan/FinancePlan";
-import ShowQueries from '../pages/financePlan/ShowQueries'
+import ShowQueries from '../pages/financePlan/ShowQueries';
+import BlogPage from "../pages/blog/BlogPage";
+import UploadVideo from "../pages/blog/UploadVideo";
 
 const router = createBrowserRouter([
   {
@@ -185,6 +187,10 @@ const router = createBrowserRouter([
         element: <FinancePlan />,
       },
       {
+        path: "blog",
+        element: <BlogPage />,
+      },
+      {
         path: "admin-panel",
         element: <AdminPanel />,
         children: [
@@ -220,6 +226,10 @@ const router = createBrowserRouter([
             path: "show-queries",
             element: <ShowQueries />,
           },
+          {
+            path: "blog-products",
+            element: <UploadVideo />
+          }
         ],
       },
     ],

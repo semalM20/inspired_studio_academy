@@ -239,6 +239,9 @@ const Header = () => {
             <Link to="/shop" className="nav-link">
               SHOP
             </Link>
+            <Link to="/blog" className="nav-link">
+              BLOG
+            </Link>
             <Link to="/reviews" className="nav-link">
               VIEW REVIEWS
             </Link>

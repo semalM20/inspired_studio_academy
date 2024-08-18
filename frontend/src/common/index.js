@@ -134,6 +134,15 @@ const SummaryApi = {
   getFinancePlanQueries: {
     url: `${backendDomain}/api/get-all-queries`,
     method: "get",
+  },
+  //blog videos
+  uploadBlogVideos: {
+    url: `${backendDomain}/api/upload-blog-video`,
+    method: "post",
+  },
+  getBlogVideos: {
+    url: `${backendDomain}/api/get-blog-videos`,
+    method: "get",
   }
 };
 

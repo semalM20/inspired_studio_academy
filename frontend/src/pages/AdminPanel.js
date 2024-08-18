@@ -63,6 +63,9 @@ const AdminPanel = () => {
             <Link to={"show-queries"} className="px-2 py-1 hover:bg-slate-100">
               Finance Queries
             </Link>
+            <Link to={"blog-products"} className="px-2 py-1 hover:bg-slate-100">
+              Upload Blog Videos
+            </Link>
           </nav>
         </div>
       </aside>

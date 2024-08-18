@@ -42,6 +42,9 @@ const shopPaySuccess = require("../controllers/shopCheckout/shopPaypalSuccess");
 //finance plan query
 const financePlanQuery = require("../controllers/financePlan/financePlanQuery");
 const allFinancePlanQuery = require("../controllers/financePlan/allFinancePlanQuery");
+//blog videos
+const UploadBlogVideosController = require("../controllers/blog/uploadBlogVideos");
+const getBlogVideosController = require("../controllers/blog/getBlogVideos");
 
 router.post("/signup", userSignUpController);
 router.post("/login", userSignInController);
@@ -103,5 +106,9 @@ router.get("/shop-failed", shopPayFailed);
 //finance plan
 router.post('/send-query', financePlanQuery)
 router.get('/get-all-queries', allFinancePlanQuery)
+
+//blog videos
+router.post('/upload-blog-video', UploadBlogVideosController);
+router.get('/get-blog-videos', getBlogVideosController)
 
 module.exports = router;

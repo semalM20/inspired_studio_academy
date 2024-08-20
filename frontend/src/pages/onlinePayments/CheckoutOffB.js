@@ -32,9 +32,9 @@ const CheckoutOffB = ({ paymentType, amount }) => {
 
   const navigate = useNavigate();
 
-  const handleOnlineClick = () => {
-    navigate("/offlineBPayItMonthly");
-  };
+  // const handleOnlineClick = () => {
+  //   navigate("/offlineBPayItMonthly");
+  // };
 
   return (
     <>
@@ -54,13 +54,13 @@ const CheckoutOffB = ({ paymentType, amount }) => {
           >
             Buy Now !
           </button>
-          <p>OR</p>
+          {/* <p>OR</p>
           <button
             className="bg-red-600 hover:bg-red-700 text-white w-full px-3 py-1 max-w-[150px] rounded-full hover:scale-110 transition-all mx-auto block mt-2"
             onClick={handleOnlineClick}
           >
             Pay It Monthly
-          </button>
+          </button> */}
         </div>
       ) : (
         <RedirectToLogin />

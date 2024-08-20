@@ -585,7 +585,8 @@ body {
 }
 
 .rectangle-container {
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
+  background-color: black;
   padding: 20px;
   border-radius: 0px;
   margin-top: 20px;
@@ -593,13 +594,15 @@ body {
 }
 
 .rectangle-container h2 {
-  color: #333;
+  /* color: #333; */
+  color: white;
   font-size: 24px;
   text-align: center;
 }
 
 .rectangle-container p {
-  color: #666;
+  /* color: #666; */
+  color: white;
   margin-bottom: 15px;
 }
 

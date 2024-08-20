@@ -686,13 +686,13 @@ const Course = () => {
         <div className="course-container">
           <div className="course-info">
             {/* <h1>Online Beginner Barber Step-By-Step Course was for £1250</h1> */}
-            <h1>Online Education Courses For Beginner's (Learn From Your Own Pace) <br />was for £1250</h1>
+            {/* <h1>Online Education Courses For Beginner's (Learn From Your Own Pace) <br />was for £1250</h1>
             <h1>60% OFF/- for first 100 people only. </h1>
-            {/* <h2 style={{ color: "#977656" }}> */}
             <h2 style={{ color: "white" }}>
               {" "}
               <u>Now only for £500 </u>
-            </h2>
+            </h2> */}
+            <h1>Online Education Courses For Beginner's (Learn From Your Own Pace) was for £1250. 60% OFF/- for first 100 people only. Now only for £500</h1>
             <button className="enroll-button" onClick={handleGetEnrolled}>
               GET ENROLLED
             </button>

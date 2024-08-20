@@ -591,7 +591,7 @@ const Course = () => {
 
   return (
     <>
-    <div className="course-selection-wrapper">
+      <div className="course-selection-wrapper">
         <h2 className="course-selection-heading uppercase">
           {" "}
           {/* <u>CHOOSE YOUR OFFLINE COURSE </u> */}
@@ -662,7 +662,7 @@ const Course = () => {
               <div className="flip-card-back">
                 {/* <h4 style={{ color: "#977656" }}> */}
                 <h4 style={{ color: "white" }}>
-                  Master Class-WorkShop Educator Modules :
+                  Master Class-WorkShop ( Skin/Fade -Layers-Shaving ) Modules :
                 </h4>
                 <br />
                 <h5> ~ the top part </h5>
@@ -686,7 +686,7 @@ const Course = () => {
         <div className="course-container">
           <div className="course-info">
             {/* <h1>Online Beginner Barber Step-By-Step Course was for £1250</h1> */}
-            <h1>Online Education Courses For Beginner's (Learn From Your Own Pace) <br/>was for £1250</h1>
+            <h1>Online Education Courses For Beginner's (Learn From Your Own Pace) <br />was for £1250</h1>
             <h1>60% OFF/- for first 100 people only. </h1>
             {/* <h2 style={{ color: "#977656" }}> */}
             <h2 style={{ color: "white" }}>
@@ -735,7 +735,7 @@ const Course = () => {
           </div>
         </div>
       </section>
-      
+
       <div className="online-info" id="online-info">
         <h2
           className="online-info-heading"

@@ -89,7 +89,7 @@
 @media (max-width: 768px) {
     .navbar-center {
         position: absolute;
-        top: 60px;
+        top: 70px;
         left: 0;
         right: 0;
         background-color: #000;
@@ -101,6 +101,7 @@
 
     .navbar-center.open {
         display: flex;
+        align-items: flex-start;
     }
 
     .navbar-right {

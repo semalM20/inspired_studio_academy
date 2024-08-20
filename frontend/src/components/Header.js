@@ -242,9 +242,9 @@ const Header = () => {
             <Link to="/blog" className="nav-link">
               BLOG
             </Link>
-            <Link to="/reviews" className="nav-link">
+            {/* <Link to="/reviews" className="nav-link">
               VIEW REVIEWS
-            </Link>
+            </Link> */}
           </div>
           <div className="navbar-right">
             <div className="relative flex justify-center items-center">

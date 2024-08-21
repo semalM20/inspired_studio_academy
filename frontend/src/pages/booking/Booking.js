@@ -36,17 +36,18 @@ const Booking = () => {
 
   const handleDateChange = (e) => {
     setDate(e.target.value);
-    if (!isMondayOrWednesday(e.target.value)) {
-      e.target.setCustomValidity("Please select a Monday or Wednesday");
+    if (!isValidBookingDay(e.target.value)) {
+      e.target.setCustomValidity("Please select a valid booking day (Monday, Wednesday, or Sunday)");
     } else {
       e.target.setCustomValidity("");
     }
   };
 
-  const isMondayOrWednesday = (dateString) => {
+  const isValidBookingDay = (dateString) => {
     const date = new Date(dateString);
     const day = date.getDay();
-    return day === 1 || day === 3;
+    // Monday (1), Wednesday (3), Sunday (0)
+    return day === 1 || day === 3 || day === 0;
   };
 
   const getTodayDate = () => {
@@ -60,6 +61,9 @@ const Booking = () => {
 
     return `${year}-${month}-${day}`;
   };
+
+  const getBookingStartDate = () => "2024-08-26";
+  const getBookingEndDate = () => "2024-09-25";
 
   const navigate = useNavigate();
 
@@ -127,9 +131,9 @@ const Booking = () => {
         <h2>Book a Free Haircut Slot</h2>
         <h3 style={{ color: "white", paddingBottom: "20px" }}>
           {" "}
-          <sup>*</sup>ONLY AVAILABLE ON MONDAY AND WEDNESDAY BETWEEN 10:00 - 16:00{" "}
+          <sup>*</sup>ONLY AVAILABLE ON MONDAY, WEDNESDAY, AND SUNDAY BETWEEN 10:00 - 15:00{" "}
         </h3>
-        <h3 className="uppercase"><sup>*</sup>Will be coming soon...</h3>
+        {/* <h3 className="uppercase"><sup>*</sup>Will Be Coming Soon...</h3> */}
         <form id="book-slot-form" onSubmit={handleSubmit}>
           <div className="form-group-inline">
             <div className="form-group">
@@ -153,29 +157,33 @@ const Booking = () => {
                 placeholder="Date"
                 value={date}
                 onChange={handleDateChange}
-                min={getTodayDate()}
+                // min={getTodayDate()}
+                min={getBookingStartDate()}
+                max={getBookingEndDate()}
                 required
                 onInvalid={(e) => {
                   e.target.setCustomValidity(
-                    "Please select a Monday or Wednesday"
+                    "Please select a valid booking day (Monday, Wednesday, or Sunday)"
                   );
                 }}
               />
             </div>
             <div className="form-group">
-              <input
-                type="time"
+              <select
                 id="time"
                 name="time"
-                placeholder="Time"
                 required
-                min="10:00"
-                max="16:00"
                 value={time}
-                onChange={(e) => {
-                  setTime(e.target.value);
-                }}
-              />
+                onChange={(e) => setTime(e.target.value)}
+              >
+                <option value="" disabled>
+                  Select Time
+                </option>
+                <option value="10:00">10:00 AM</option>
+                <option value="11:30">11:30 AM</option>
+                <option value="13:00">01:00 PM</option>
+                <option value="14:30">02:30 PM</option>
+              </select>
             </div>
             <div className="form-group">
               <input

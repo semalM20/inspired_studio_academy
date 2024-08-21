@@ -41,11 +41,13 @@ const CheckoutOffB = ({ paymentType, amount }) => {
       {user?._id ? (
         <div className="flex justify-center flex-col items-center h-96">
           <div className="flex justify-center">
-            <p className="text-red-600 font-bold">Course Fee: {amount} GBP</p>
+            <p className="text-red-600">Course Fee: 1999 GBP</p>
             <p className="text-slate-500 line-through px-2 font-semibold">
               2499 GBP
             </p>
+            <p className="text-red-600">(20% VAT will be applied)</p>
           </div>
+          <p className="text-red-600 font-bold">Total Fees = {amount} GBP</p>
           <p>You have not purchased the course yet!</p>
           <p>Click below to buy it</p>
           <button

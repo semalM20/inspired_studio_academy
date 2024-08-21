@@ -62,15 +62,21 @@ const CheckoutSummary = () => {
     0
   );
 
-  // Handle payment button click
+  // Calculate VAT (20%)
+  const vat = totalPrice * 0.2;
 
+  // Calculate total price including VAT and shipping charges
+  const totalPriceWithVat = totalPrice + vat;
+  const totalPriceWithShipping = totalPriceWithVat + 2.0;
+
+  // Handle payment button click
   const userDetails = JSON.parse(localStorage.getItem("session"));
 
   const HandleSubmit = async (e) => {
     e.preventDefault();
 
     let res = await axios.post(SummaryApi.shopPayment.url, {
-      amount: totalPrice + 2,
+      amount: totalPriceWithShipping,
       userId: userDetails._id,
     });
 
@@ -107,12 +113,16 @@ const CheckoutSummary = () => {
                     <p>{totalPrice.toFixed(2)} GBP</p>
                   </div>
                   <div className="flex justify-between items-center px-4 gap-2 font-medium text-lg text-slate-600">
+                    <p>VAT (20%)</p>
+                    <p>{vat.toFixed(2)} GBP</p>
+                  </div>
+                  <div className="flex justify-between items-center px-4 gap-2 font-medium text-lg text-slate-600">
                     <p>Shipping Charges</p>
                     <p>2.00 GBP</p>
                   </div>
                   <div className="flex justify-between items-center px-4 gap-2 font-medium text-lg text-slate-600">
                     <p>Total Price</p>
-                    <p>{(totalPrice + 2.0).toFixed(2)} GBP</p>
+                    <p>{totalPriceWithShipping.toFixed(2)} GBP</p>
                   </div>
                   <button
                     className="bg-blue-600 p-2 mt-2 text-white w-full"

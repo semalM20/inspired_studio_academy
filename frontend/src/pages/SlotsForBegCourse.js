@@ -33,39 +33,40 @@ const SlotsForBegCourse = () => {
   return (
     <>
       {user?._id ? (
-        <div className="flex flex-col justify-center items-center w-full h-80">
-          <div className="flex flex-col justify-between items-center h-20 mb-5">
+        <div className="flex flex-col justify-center items-center w-full p-4">
+          <div className="flex flex-col justify-between items-center h-20 mb-5 text-center">
             <p className="text-2xl font-medium">Available Slots</p>
             <p className="capitalize text-lg">
               Choose from the below slots for beginner's course
             </p>
-            <p className="capitalize text-sm text-red-600">
+            <p className="capitalize text-sm text-red-600 mb-10">
               ** only 4 students are allowed in each batch
             </p>
           </div>
-          <div className="flex justify-around items-center w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full mt-10">
             {slots.length > 0 ? (
               slots.map((slot) => (
                 <div
                   key={slot._id}
-                  className="flex flex-col justify-center items-center w-1/2"
+                  className="flex flex-col justify-center items-center bg-white shadow-md p-4 rounded-lg"
                 >
-                  <p>Slot Date: {moment(slot.date).format("LL")}</p>
+                  <p className="text-lg font-semibold mb-2">
+                    Slot Date: {moment(slot.date).format("LL")}
+                  </p>
                   {slot.users.includes(user._id) ? (
-                    <h1>Slot is already confirmed</h1>
+                    <h1 className="text-green-600 font-semibold">Slot is already confirmed</h1>
                   ) : slot.availableSlots > slot.users.length ? (
                     <button
-                      className="px-3 py-1 m-2 rounded text-white bg-red-600 hover:bg-red-700"
+                      className="px-4 py-2 mt-2 rounded text-white bg-red-600 hover:bg-red-700"
                       onClick={() => handleBookSlot(slot._id)}
                     >
                       Book Slot
                     </button>
                   ) : (
-                    <h1>All Slots are booked</h1>
+                    <h1 className="text-red-600 font-semibold">All Slots are booked</h1>
                   )}
-                  <p>
-                    Number of slots left:{" "}
-                    {slot.availableSlots - slot.users.length}
+                  <p className="mt-2 text-gray-600">
+                    Number of slots left: {slot.availableSlots - slot.users.length}
                   </p>
                 </div>
               ))

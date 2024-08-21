@@ -29,7 +29,7 @@ const BookingConfirmedOfflineB = () => {
           </div>
         ) : (
           <div className="flex justify-center flex-col items-center h-96">
-            <div style={{ display: "ruby" }} className="flex justify-around">
+            <div style={{ display: "ruby" }}>
               <p className="text-red-600">
                 Beginner's Course Fee: 1999 GBP{" "}
               </p>

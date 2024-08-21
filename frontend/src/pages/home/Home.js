@@ -129,6 +129,7 @@ const Home = () => {
                     height: "300px",
                     width: "300px",
                     backgroundColor: "black",
+                    objectFit: "cover"
                   }}
                 ></video>
               </div>
@@ -143,6 +144,7 @@ const Home = () => {
                     height: "300px",
                     width: "300px",
                     backgroundColor: "black",
+                    objectFit: "cover"
                   }}
                 ></video>
               </div>
@@ -158,6 +160,7 @@ const Home = () => {
                       height: "300px",
                       width: "300px",
                       backgroundColor: "black",
+                      objectFit: "cover"
                     }}
                   ></video>
                 </div>
@@ -173,6 +176,7 @@ const Home = () => {
                     height: "300px",
                     width: "300px",
                     backgroundColor: "black",
+                    objectFit: "cover"
                   }}
                 ></video>
               </div>

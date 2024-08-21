@@ -16,7 +16,7 @@ const BookingConfirmedOfflineB = () => {
 
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/offlineBCoursePayment");
+    navigate("/slotsForBegCourse");
   };
 
   return (

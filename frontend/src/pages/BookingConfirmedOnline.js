@@ -49,7 +49,7 @@ const BookingConfirmed = () => {
               Online Video course will be available only for 3 months
             </p>
             <div className="flex justify-center flex-col items-center h-96">
-              <div className="flex justify-around">
+              <div style={{ display: "ruby" }} className="flex justify-around">
                 <p className="text-red-600">
                   Video Course Fee: 500 GBP{" "}
                 </p>

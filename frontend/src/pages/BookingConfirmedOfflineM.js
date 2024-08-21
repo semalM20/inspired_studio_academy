@@ -33,7 +33,7 @@ const BookingConfirmedOfflineM = () => {
         ) : (
           <div className="flex justify-center flex-col items-center h-96">
             <p className="text-red-600 font-bold">
-              Master's Course Fee: 300 GBP{" "}
+              Master's Course Fee: 360 GBP{" "}
             </p>
             <p className="text-red-600 capitalize my-2">
               <sup>**</sup> call the Academy for the slots available{" "}

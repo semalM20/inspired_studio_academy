@@ -116,9 +116,9 @@ const router = createBrowserRouter([
       },
       {
         path: "offlineMCoursePayment",
-        // 300
+        // 300 + VAT 20% = 360
         element: (
-          <CheckoutOffM paymentType="offlineMCoursePayment" amount="300" />
+          <CheckoutOffM paymentType="offlineMCoursePayment" amount="360" />
         ),
       },
       {

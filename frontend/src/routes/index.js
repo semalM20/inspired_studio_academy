@@ -87,8 +87,8 @@ const router = createBrowserRouter([
       },
       {
         path: "onlineCoursePayment",
-        // 1250
-        element: <Checkoutt paymentType="onlineCoursePayment" amount="500" />,
+        // 1250 + 20% VAT(250VAT) ===> 500 + 100(VAT)
+        element: <Checkoutt paymentType="onlineCoursePayment" amount="600" />,
       },
       {
         path: "bookingConfirmedOnline",

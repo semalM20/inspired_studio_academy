@@ -37,13 +37,15 @@ const Checkoutt = ({ paymentType, amount }) => {
           </p>
           <div className="flex justify-center flex-col items-center h-96">
             <div className="flex justify-around">
-              <p className="text-red-600 font-semibold">
-                Course Fee: {amount} GBP
+              <p className="text-red-600">
+                Course Fee: 500 GBP
               </p>
               <p className="text-slate-500 line-through px-2 font-semibold">
                 1250 GBP
               </p>
+              <p className="text-red-600">(20% VAT will be applied)</p>
             </div>
+            <p className="text-red-600 font-bold">Total Fees = {amount} GBP</p>
             <p>You have not purchased the course yet!</p>
             <p>Click below to buy it</p>
             <button

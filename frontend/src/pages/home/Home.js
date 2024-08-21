@@ -7,6 +7,11 @@ import SlideImage2 from "../../assets/img2.jpg";
 import SlideImage3 from "../../assets/img3.jpg";
 import SlideImage4 from "../../assets/img4.jpg";
 
+import HomeVideo1 from '../../assets/HomeVideo1.jpg'
+import HomeVideo2 from '../../assets/HomeVideo2.jpg'
+import HomeVideo3 from '../../assets/HomeVideo3.jpg'
+import HomeVideo4 from '../../assets/HomeVideo4.jpg'
+
 import iBoxImage1 from "../../assets/img1tech.jpg";
 import iBoxImage2 from "../../assets/img2tech.jpg";
 import iBoxImage3 from "../../assets/img3tech.jpg";
@@ -108,9 +113,9 @@ const Home = () => {
             <p>
               Our Course it’s held from Our Instructor Adrian which is very
               professional and have experience he build his own strategy to make
-              you a professional barber in a short period time! All the Education and 
+              you a professional barber in a short period time! All the Education and
               practice to help you grow and to become a Barber.
-              <br/>Part-Time Job Available after Course.
+              <br />Part-Time Job Available after Course.
             </p>
             <div className="video-boxes">
               <div className="video-box">
@@ -119,7 +124,7 @@ const Home = () => {
                   src={mainPgIntroVideo}
                   // src={`https://res.cloudinary.com/${process.env.CLOUDINARY_PASS}/video/upload/v1718170469/barber-videos/mvvo6j8rk2j89wbxmit0.mp4`}
                   controls
-                  // poster={SlideImage1}
+                  poster={HomeVideo1}
                   style={{
                     height: "300px",
                     width: "300px",
@@ -133,6 +138,7 @@ const Home = () => {
                   src={certificationVideo}
                   // src={`https://res.cloudinary.com/${process.env.CLOUDINARY_PASS}/video/upload/v1718172192/barber-videos/jz4mnfppizfgtrwsgcjm.mp4`}
                   controls
+                  poster={HomeVideo2}
                   style={{
                     height: "300px",
                     width: "300px",
@@ -147,6 +153,7 @@ const Home = () => {
                     src={feedbackVideo}
                     // src={`https://res.cloudinary.com/${process.env.CLOUDINARY_PASS}/video/upload/v1718172432/barber-videos/uzrztxhtwlub5c9ptqje.mp4`}
                     controls
+                    poster={HomeVideo3}
                     style={{
                       height: "300px",
                       width: "300px",
@@ -161,6 +168,7 @@ const Home = () => {
                   src={offlineClassVideo}
                   // src={`https://res.cloudinary.com/${process.env.CLOUDINARY_PASS}/video/upload/v1718172516/barber-videos/yvjouxfmgjsfoouatijo.mp4`}
                   controls
+                  poster={HomeVideo4}
                   style={{
                     height: "300px",
                     width: "300px",

@@ -143,6 +143,10 @@ const SummaryApi = {
   getBlogVideos: {
     url: `${backendDomain}/api/get-blog-videos`,
     method: "get",
+  },
+  deleteBlogVideos: {
+    url: `${backendDomain}/api/deleteBlogVideo`,
+    method: "post"
   }
 };
 

@@ -9,7 +9,7 @@ const BlogPage = () => {
             try {
                 const response = await fetch(SummaryApi.getBlogVideos.url);
                 const data = await response.json();
-                console.log(data.data);
+                // console.log(data.data);
                 if (Array.isArray(data.data)) {
                     setVideos(data.data);
                 } else {

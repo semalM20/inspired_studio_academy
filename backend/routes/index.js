@@ -45,6 +45,7 @@ const allFinancePlanQuery = require("../controllers/financePlan/allFinancePlanQu
 //blog videos
 const UploadBlogVideosController = require("../controllers/blog/uploadBlogVideos");
 const getBlogVideosController = require("../controllers/blog/getBlogVideos");
+const deleteBlogVideosController = require("../controllers/blog/deleteBlogVideos");
 
 router.post("/signup", userSignUpController);
 router.post("/login", userSignInController);
@@ -110,5 +111,6 @@ router.get('/get-all-queries', allFinancePlanQuery)
 //blog videos
 router.post('/upload-blog-video', UploadBlogVideosController);
 router.get('/get-blog-videos', getBlogVideosController)
+router.delete('/deleteBlogVideo/:id', deleteBlogVideosController)
 
 module.exports = router;

@@ -160,6 +160,7 @@ const Footer = () => {
               <p className="capitalize">
                 &nbsp;&nbsp;Close to Train Station 🚉
               </p>
+              <p className="capitalize">next to Travelodge Hotel,<br />rooms starting with £30</p>
             </div>
           </div>
 

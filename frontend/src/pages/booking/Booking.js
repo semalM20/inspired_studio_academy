@@ -128,7 +128,7 @@ const Booking = () => {
   return (
     <>
       <div className="book-slot-section">
-        <h2>Book a Free Haircut Slot</h2>
+        <h2>Book £1 Haircuts&Beard</h2>
         <h3 style={{ color: "white", paddingBottom: "20px" }}>
           {" "}
           <sup>*</sup>ONLY AVAILABLE ON MONDAY, WEDNESDAY, AND SUNDAY BETWEEN 10:00 - 15:00{" "}

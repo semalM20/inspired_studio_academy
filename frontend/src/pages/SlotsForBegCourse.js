@@ -74,6 +74,7 @@ const SlotsForBegCourse = () => {
               <p>No Slots Available</p>
             )}
           </div>
+          <p className="text-red-600 font-semibold mt-10 capitalize">New Slots will be coming soon...</p>
         </div>
       ) : (
         <RedirectToLogin />

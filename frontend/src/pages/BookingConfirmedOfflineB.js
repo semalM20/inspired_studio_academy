@@ -31,14 +31,15 @@ const BookingConfirmedOfflineB = () => {
           <div className="flex justify-center flex-col items-center h-96">
             <div style={{ display: "ruby" }}>
               <p className="text-red-600">
-                Beginner's Course Fee: 1999 GBP{" "}
+                Beginner's Course Fee: 2000£{" "}
               </p>
               <p className="text-slate-500 line-through px-2 font-semibold">
-                2499 GBP
+                2499£
               </p>
-              <p className="text-red-600">(20% VAT will be applied)</p>
+              <p className="text-red-600">(Including TAX)</p>
+              {/* <p className="text-red-600">(20% VAT will be applied)</p> */}
             </div>
-            <p className="text-red-600 font-bold">Total Fees = 2398.8 GBP</p>
+            {/* <p className="text-red-600 font-bold">Total Fees = 2398.8 GBP</p> */}
             <p>You have not purchased the offline beginner's course</p>
             <p>click here to buy the course </p>
             <button

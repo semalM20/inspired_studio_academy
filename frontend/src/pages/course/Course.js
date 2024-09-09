@@ -692,7 +692,8 @@ const Course = () => {
               {" "}
               <u>Now only for £500 </u>
             </h2> */}
-            <h1>Online Education Courses For Beginner's (Learn From Your Own Pace) was for £1250. 60% OFF/- for first 100 people only. Now only for £500</h1>
+            {/* <h1>Online Education Courses For Beginner's (Learn From Your Own Pace) was for £1250. 60% OFF/- for first 100 people only. Now only for £500</h1> */}
+            <h1>Online Academy (For Beginners)</h1>
             <button className="enroll-button" onClick={handleGetEnrolled}>
               GET ENROLLED
             </button>

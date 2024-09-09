@@ -51,14 +51,15 @@ const BookingConfirmed = () => {
             <div className="flex justify-center flex-col items-center h-96">
               <div style={{ display: "ruby" }}>
                 <p className="text-red-600">
-                  Video Course Fee: 500 GBP{" "}
+                  Video Course Fee: 600£{" "}
                 </p>
                 <p className="text-slate-500 line-through px-2 font-semibold">
-                  1250 GBP
+                  1250£
                 </p>
-                <p className="text-red-600">(20% VAT will be applied)</p>
+                <p className="text-red-600">(Including TAX)</p>
+                {/* <p className="text-red-600">(20% VAT will be applied)</p> */}
               </div>
-              <p className="text-red-600 font-bold">Total Fees = 600 GBP</p>
+              {/* <p className="text-red-600 font-bold">Total Fees = 600 GBP</p> */}
               <p>You have not purchased the video course</p>
               <p>click here to buy the course </p>
               <button

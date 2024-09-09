@@ -98,8 +98,9 @@ const router = createBrowserRouter([
       {
         path: "offlineBCoursePayment",
         // 1999 + 20% VAT = 399.8 Total = 2398.8£
+        //2000
         element: (
-          <CheckoutOffB paymentType="offlineBCoursePayment" amount="2398.8" />
+          <CheckoutOffB paymentType="offlineBCoursePayment" amount="2000" />
         ),
       },
       {

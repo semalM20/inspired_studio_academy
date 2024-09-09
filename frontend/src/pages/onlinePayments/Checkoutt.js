@@ -38,14 +38,15 @@ const Checkoutt = ({ paymentType, amount }) => {
           <div className="flex justify-center flex-col items-center h-96">
             <div style={{ display: "ruby" }}>
               <p className="text-red-600">
-                Course Fee: 500 GBP
+                Course Fee: 600£
               </p>
               <p className="text-slate-500 line-through px-2 font-semibold">
-                1250 GBP
+                1250£
               </p>
-              <p className="text-red-600">(20% VAT will be applied)</p>
+              <p className="text-red-600">(Including TAX)</p>
+              {/* <p className="text-red-600">(20% VAT will be applied)</p> */}
             </div>
-            <p className="text-red-600 font-bold">Total Fees = {amount} GBP</p>
+            {/* <p className="text-red-600 font-bold">Total Fees = {amount} GBP</p> */}
             <p>You have not purchased the course yet!</p>
             <p>Click below to buy it</p>
             <button

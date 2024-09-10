@@ -51,7 +51,7 @@ const BookingConfirmed = () => {
             <div className="flex justify-center flex-col items-center h-96">
               <div style={{ display: "ruby" }}>
                 <p className="text-red-600">
-                  Video Course Fee: 600£{" "}
+                  Video Course Fee: 260£{" "}
                 </p>
                 <p className="text-slate-500 line-through px-2 font-semibold">
                   1250£

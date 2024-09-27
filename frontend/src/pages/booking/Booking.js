@@ -131,7 +131,8 @@ const Booking = () => {
         <h2>Book £1 Haircuts&Beard</h2>
         <h3 style={{ color: "white", paddingBottom: "20px" }}>
           {" "}
-          <sup>*</sup>ONLY AVAILABLE ON MONDAY, WEDNESDAY, AND SUNDAY BETWEEN 10:00 - 15:00{" "}
+          {/* <sup>*</sup>ONLY AVAILABLE ON MONDAY, WEDNESDAY, AND SUNDAY BETWEEN 10:00 - 15:00{" "} */}
+          <sup>*</sup>COMING SOON...{" "}
         </h3>
         {/* <h3 className="uppercase"><sup>*</sup>Will Be Coming Soon...</h3> */}
         <form id="book-slot-form" onSubmit={handleSubmit}>

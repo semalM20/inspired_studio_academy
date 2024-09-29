@@ -62,7 +62,7 @@ const Booking = () => {
     return `${year}-${month}-${day}`;
   };
 
-  const getBookingStartDate = () => "2024-08-26";
+  // const getBookingStartDate = () => "2024-08-26";
   const getBookingEndDate = () => "2024-09-25";
 
   const navigate = useNavigate();
@@ -158,8 +158,8 @@ const Booking = () => {
                 placeholder="Date"
                 value={date}
                 onChange={handleDateChange}
-                // min={getTodayDate()}
-                min={getBookingStartDate()}
+                min={getTodayDate()}
+                // min={getBookingStartDate()}
                 max={getBookingEndDate()}
                 required
                 onInvalid={(e) => {

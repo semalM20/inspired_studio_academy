@@ -386,8 +386,8 @@ const VideoContent = () => {
 
     {
       id: 42,
-      title: "42- BUZZCUT HAIRCUT ",
-      url: "https://player.vimeo.com/video/961401983?h=ebaa213371&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      title: "42- BUZZ CUT - SKIN FADE",
+      url: "https://player.vimeo.com/video/1013937655?h=cea52b7615&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     },
 
     {
